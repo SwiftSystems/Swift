@@ -7,7 +7,7 @@ local Games = {
     }
 }
 
-local Game = Games[1]
+local Game = Games[game.PlaceId]
 if Game then
     loadstring(game:HttpGet(Game.URL))()
 else
